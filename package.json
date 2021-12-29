@@ -1,0 +1,24 @@
+{
+  "name": "mmbhof_chatbot",
+  "version": "1.0.0",
+  "description": "Backend for MMBHOF Chatbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angela139/mmbhof_chatbot.git"
+  },
+  "author": "Angela Hu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/angela139/mmbhof_chatbot/issues"
+  },
+  "homepage": "https://github.com/angela139/mmbhof_chatbot#readme",
+  "dependencies": {
+    "@google-cloud/dialogflow-cx": "^2.14.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2"
+  }
+}
