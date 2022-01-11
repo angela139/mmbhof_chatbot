@@ -1,5 +1,6 @@
 const express = require('express');
 const dotenv = require('dotenv');
+const path = require('path');
 dotenv.config();
 
 // Imports the Google Cloud Some API library
@@ -66,6 +67,10 @@ app.post('/dialogflow', async (req, res) => {
     let queryText = req.body.queryText;
     let responseData = await detectIntent(queryText);
     res.send(responseData.response);
+});
+
+app.get('/', function(req, res){
+    res.sendFile(path.join(__dirname, '/home.html'));
 });
 
 app.listen(port, () => {
